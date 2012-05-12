@@ -50,7 +50,7 @@ void do_driving() {
     else {
         //tank drive
         // Drive changed To Shan's orders.
-        void Drive (right_joystick.GetY,left_joystick.GetX);
+        robot_drive(right_joystick.GetY(),left_joystick.GetX());
         float left = left_joystick.GetX();
         float right = right_joystick.GetY();
         std::printf("Tank Drive: %f, %f\n", left, right);
